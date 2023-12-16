@@ -1,0 +1,12 @@
+version: '3'
+services:
+  wf:
+    build:
+      context: ./wildfly
+      dockerfile: Dockerfile
+    ports:
+      - 8080:8080
+      - 9990:9990
+    volumes:
+      - "./wf-data/logs:/opt/jboss/wildfly/standalone/log"
+      - "./wf-data/conf:/opt/jboss/wildfly/standalone/configuration"

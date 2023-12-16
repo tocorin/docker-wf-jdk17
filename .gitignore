@@ -2,3 +2,5 @@ wildfly-*/
 *.zip
 *.tar.gz
 .DS_Store
+wf-data/logs
+wf-data/conf/standalone_xml_history/
